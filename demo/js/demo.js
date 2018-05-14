@@ -68,17 +68,23 @@ export class App extends Component {
     return (
       <div className="commentBox">
         <CommentList data={this.state.data} />
-        <ReactPaginate previousLabel={"previous"}
-                       nextLabel={"next"}
-                       breakLabel={<a href="">...</a>}
-                       breakClassName={"break-me"}
-                       pageCount={this.state.pageCount}
-                       marginPagesDisplayed={2}
-                       pageRangeDisplayed={5}
-                       onPageChange={this.handlePageClick}
-                       containerClassName={"pagination"}
-                       subContainerClassName={"pages pagination"}
-                       activeClassName={"active"} />
+        <ReactPaginate               previousLabel={'<'}
+              nextLabel={'>'}
+              breakLabel={<a href="">...</a>}
+              breakClassName="Pagination-paginationLink"
+              pageCount={8}
+              marginPagesDisplayed={2}
+              pageRangeDisplayed={3}
+              onPageChange={this.handlePageClick}
+              containerClassName="Pagination-pagination"
+              pageClassName="Pagination-paginationItem"
+              pageLinkClassName="Pagination-paginationLink"
+              activeClassName="Pagination-primary"
+              disabledClassName="Pagination-disabled"
+              nextClassName="Pagination-paginationItem"
+              nextLinkClassName="Pagination-paginationLink"
+              previousClassName="Pagination-paginationItem"
+              previousLinkClassName="Pagination-paginationLink" />
       </div>
     );
   }

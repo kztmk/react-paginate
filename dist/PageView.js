@@ -21,10 +21,10 @@ var PageView = function PageView(props) {
   if (props.selected) {
     ariaCurrent = 'page';
     ariaLabel = 'Page ' + props.page + ' is your current page';
-    if (typeof cssClassName !== 'undefined') {
-      cssClassName = cssClassName + ' ' + props.activeClassName;
+    if (typeof linkClassName !== 'undefined') {
+      linkClassName = linkClassName + ' ' + props.activeClassName;
     } else {
-      cssClassName = props.activeClassName;
+      linkClassName = props.activeClassName;
     }
   }
 

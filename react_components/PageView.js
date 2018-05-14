@@ -3,8 +3,8 @@
 import React from 'react';
 
 const PageView = (props) => {
-  let cssClassName = props.pageClassName;
-  const linkClassName = props.pageLinkClassName;
+  const cssClassName = props.pageClassName;
+  let linkClassName = props.pageLinkClassName;
   const onClick = props.onClick;
   const href = props.href;
   let ariaLabel = 'Page ' + props.page +
@@ -14,10 +14,10 @@ const PageView = (props) => {
   if (props.selected) {
     ariaCurrent = 'page';
     ariaLabel = 'Page ' + props.page + ' is your current page';
-    if (typeof(cssClassName) !== 'undefined') {
-      cssClassName = cssClassName + ' ' + props.activeClassName;
+    if (typeof(linkClassName) !== 'undefined') {
+      linkClassName = linkClassName + ' ' + props.activeClassName;
     } else {
-      cssClassName = props.activeClassName;
+      linkClassName = props.activeClassName;
     }
   }
 

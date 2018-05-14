@@ -1,13 +1,97 @@
-#react-paginate ul {
+.Pagination-pagination {
+    margin: 0;
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#react-paginate li {
-    display: inline-block;
-}
-
-#react-paginate .break a {
+    padding-left: 0;
+    border-radius: 4px;
+    list-style-type: none;
+  }
+  .Pagination-paginationItem, .previous, next {
+    display: inline;
+  }
+  .Pagination-paginationLink {
+    float: left;
+    height: 30px;
+    margin: 0 3px;
+    border: 0;
+    padding: 0px 11px;
+    position: relative;
+    min-width: 30px;
+    font-size: 12px;
+    box-sizing: border-box;
+    transition: all .3s;
+    min-height: auto;
+    background: transparent;
+    font-weight: 400;
+    line-height: 30px;
+    border-radius: 30px !important;
+    text-transform: uppercase;
+  :first-of-type: margin-left: 0;
+    text-decoration: none;
+  }
+  .Pagination-paginationLink, .Pagination-paginationLink:hover, .Pagination-paginationLink:focus {
+    color: #999999;
+  }
+  .Pagination-paginationLink:hover, .Pagination-paginationLink:focus {
+    z-index: 3;
+    border-color: #ddd;
+    background-color: #eee;
+  }
+  .Pagination-paginationLink:hover {
+    cursor: pointer;
+  }
+  .Pagination-primary, .Pagination-primary:hover, .Pagination-primary:focus {
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+    border-color: #9c27b0;
+    background-color: #9c27b0;
+  }
+  .Pagination-primary:hover, .Pagination-primary:focus {
     cursor: default;
-}
+    z-index: 2;
+  }
+  .Pagination-info, .Pagination-info:hover, .Pagination-info:focus {
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(0, 188, 212, 0.14), 0 1px 10px 0 rgba(0, 188, 212, 0.12), 0 2px 4px -1px rgba(0, 188, 212, 0.2);
+    border-color: #00acc1;
+    background-color: #00acc1;
+  }
+  .Pagination-info:hover, .Pagination-info:focus {
+    cursor: default;
+    z-index: 2;
+  }
+  .Pagination-success, .Pagination-success:hover, .Pagination-success:focus {
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(76, 175, 80, 0.14), 0 1px 10px 0 rgba(76, 175, 80, 0.12), 0 2px 4px -1px rgba(76, 175, 80, 0.2);
+    border-color: #4caf50;
+    background-color: #4caf50;
+  }
+  .Pagination-success:hover, .Pagination-success:focus {
+    cursor: default;
+    z-index: 2;
+  }
+  .Pagination-warning, .Pagination-warning:hover, .Pagination-warning:focus {
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(255, 152, 0, 0.14), 0 1px 10px 0 rgba(255, 152, 0, 0.12), 0 2px 4px -1px rgba(255, 152, 0, 0.2);
+    border-color: #ff9800;
+    background-color: #ff9800;
+  }
+  .Pagination-warning:hover, .Pagination-warning:focus {
+    cursor: default;
+    z-index: 2;
+  }
+  .Pagination-danger, .Pagination-danger:hover, .Pagination-danger:focus {
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2);
+    border-color: #f44336;
+    background-color: #f44336;
+  }
+  .Pagination-danger:hover, .Pagination-danger:focus {
+    cursor: default;
+    z-index: 2;
+  }
+  .Pagination-disabled, .Pagination-disabled:hover, .Pagination-disabled:focus {
+    color: #777;
+    cursor: not-allowed;
+    border-color: #ddd;
+    background-color: #fff;
+  }
